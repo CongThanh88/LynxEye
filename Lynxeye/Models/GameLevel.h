@@ -13,6 +13,8 @@
 @property(nonatomic,strong)NSString *leftImage;
 @property(nonatomic,strong)NSString *rightImage;
 @property(nonatomic,strong)MapImageData *gameData;
+
+-(void)updateMarkDataWithViewSize:(CGSize)realSize;
 +(GameLevel*)parseData:(NSDictionary*)dict;
 +(NSArray*)parseListData:(NSArray*)dictArray;
 @end

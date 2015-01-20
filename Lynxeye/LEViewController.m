@@ -44,6 +44,20 @@
 }
 
 
+-(void)viewWillLayoutSubviews
+{
+    [super viewWillLayoutSubviews];
+    static dispatch_once_t oneToken;
+    dispatch_once(&oneToken, ^{
+        CGSize realSizeView = _imvTopPicture.frame.size;
+        for (GameLevel *gameLevel in gameLevels) {
+            if (gameLevel) {
+                [gameLevel updateMarkDataWithViewSize:realSizeView];
+            }
+        }
+    });
+}
+
 - (void)adViewDidReceiveAd:(GADBannerView *)view
 {
     

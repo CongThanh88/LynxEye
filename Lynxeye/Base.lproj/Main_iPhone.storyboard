@@ -68,11 +68,11 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.62953353099999998" blue="0.18404995439999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="dax-Yg-2bU" customClass="TouchedImageView">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="dax-Yg-2bU" customClass="TouchedImageView">
                                 <rect key="frame" x="10" y="73" width="301" height="183"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="JlY-5b-dzp" customClass="TouchedImageView">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="JlY-5b-dzp" customClass="TouchedImageView">
                                 <rect key="frame" x="10" y="261" width="301" height="183"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>

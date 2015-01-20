@@ -17,18 +17,19 @@
         gameLevel.leftImage =  [dict objectForKey:@"left_image"];
         gameLevel.rightImage = [dict objectForKey:@"right_image"];
         gameLevel.gameData = [MapImageData parseData:[dict objectForKey:@"checked_marks"]];
-        
-        //Update position
-        CGSize realSize = [self getRealSize];
-        CGSize imageSize = [self imageSize:gameLevel.leftImage];
-        float ratioWidth = (realSize.width - imageSize.width)/imageSize.width;
-        float ratioHeight = (realSize.height - imageSize.height)/imageSize.height;
-        [gameLevel.gameData updateMarkPositionBaseOnWidthRatio:ratioWidth andHeightRatio:ratioHeight];
-        
         return gameLevel;
         
     }
     return nil;
+}
+
+-(void)updateMarkDataWithViewSize:(CGSize)realSize
+{
+    //Update position
+    CGSize imageSize = [GameLevel imageSize:self.leftImage];
+    float ratioWidth = (realSize.width - imageSize.width)/imageSize.width;
+    float ratioHeight = (realSize.height - imageSize.height)/imageSize.height;
+    [self.gameData updateMarkPositionBaseOnWidthRatio:ratioWidth andHeightRatio:ratioHeight];
 }
 
 +(NSArray*)parseListData:(NSArray *)dictArray
@@ -57,14 +58,6 @@
         }
     }
     return CGSizeZero;
-}
-
-+(CGSize)getRealSize
-{
-    CGSize screenSize = [UIScreen mainScreen].bounds.size;
-    float imageViewWidth = (screenSize.width - 8)/2;
-    float imageViewHeight = screenSize.height - 42 -32;
-    return  CGSizeMake(imageViewWidth, imageViewHeight);
 }
 
 @end
