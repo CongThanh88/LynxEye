@@ -675,15 +675,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: do tam (CXRTNZ8FZR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Lynxeye/Lynxeye-Prefix.pch";
 				INFOPLIST_FILE = "Lynxeye/Lynxeye-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Lynxeye/Libraries/GoogleMobileAdsSdkiOS/Libs",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a9ebcc3f-c3e2-458c-9d6f-6afedc554d25";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -693,15 +696,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: do tam (CXRTNZ8FZR)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Lynxeye/Lynxeye-Prefix.pch";
 				INFOPLIST_FILE = "Lynxeye/Lynxeye-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Lynxeye/Libraries/GoogleMobileAdsSdkiOS/Libs",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a9ebcc3f-c3e2-458c-9d6f-6afedc554d25";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

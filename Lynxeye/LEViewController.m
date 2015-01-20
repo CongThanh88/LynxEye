@@ -18,12 +18,16 @@
     NSArray *gameLevels;
     NSInteger currentLevel;
     GADBannerView *gadBannerView;
+    NSInteger numberOfCorrect;
+    NSInteger totalCorrectNumber;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    _viewSuggest.layer.cornerRadius = 4;
+    _viewSuggest.layer.masksToBounds = YES;
     
     CGSize screenSize = [UIScreen  mainScreen].bounds.size;
     CGRect bannerFrame = CGRectMake(0, 0, screenSize.width, 50);
@@ -83,24 +87,40 @@
     if (gameLevels) {
         GameLevel *gameLevel = [gameLevels objectAtIndex:level];
         if (gameLevel) {
-            
+            _lblCurrentLevel.text = [NSString stringWithFormat:@"LEVEL %d",(level+1)];
             _imvTopPicture.image = [UIImage imageNamed:gameLevel.leftImage];
             _imvBottomPicture.image = [UIImage imageNamed:gameLevel.rightImage];
             
             _imvTopPicture.data = gameLevel.gameData;
             _imvBottomPicture.data = gameLevel.gameData;
             
+            totalCorrectNumber = 0;
+            if (gameLevel.gameData && gameLevel.gameData.listMarkPostions) {
+                totalCorrectNumber = gameLevel.gameData.listMarkPostions.count;
+            }
+            [self updateCorrectNumberBaseTotalNumber];
         }
     }
+}
+
+-(void)updateCorrectNumberBaseTotalNumber
+{
+    _lblCorrectNumber.text = [NSString stringWithFormat:@"%d/%d",numberOfCorrect, totalCorrectNumber];
 }
 
 #pragma mark - TouchedimageViewDelegate
 -(void)touchedImageView:(TouchedImageView *)imageView markedOnFrame:(CGRect)frame
 {
+    numberOfCorrect ++;
     if (imageView == _imvTopPicture) {
         [_imvBottomPicture drawCircleOn:frame];
     }else{
         [_imvTopPicture drawCircleOn:frame];
+    }
+    [self updateCorrectNumberBaseTotalNumber];
+    
+    if (numberOfCorrect == totalCorrectNumber) {
+        [self loadGame:currentLevel++];
     }
 }
 
