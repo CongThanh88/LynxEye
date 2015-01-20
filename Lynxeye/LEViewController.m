@@ -87,7 +87,7 @@
             _imvTopPicture.image = [UIImage imageNamed:gameLevel.leftImage];
             _imvBottomPicture.image = [UIImage imageNamed:gameLevel.rightImage];
             
-            _imvBottomPicture.data = gameLevel.gameData;
+            _imvTopPicture.data = gameLevel.gameData;
             _imvBottomPicture.data = gameLevel.gameData;
             
         }
@@ -98,9 +98,9 @@
 -(void)touchedImageView:(TouchedImageView *)imageView markedOnFrame:(CGRect)frame
 {
     if (imageView == _imvTopPicture) {
-        [_imvTopPicture drawCircleOn:frame];
-    }else{
         [_imvBottomPicture drawCircleOn:frame];
+    }else{
+        [_imvTopPicture drawCircleOn:frame];
     }
 }
 

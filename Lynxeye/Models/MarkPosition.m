@@ -24,8 +24,8 @@
     float width = ABS(_end_X - _start_X);
     float height = ABS(_end_Y - _start_Y);
     float minSize = MAX(width, height);
-    float position_X = _start_X;
-    float position_Y = _start_Y;
+    float position_X = _start_X + width/2 - minSize/2;
+    float position_Y = _start_Y + height/2 - minSize/2;
     
     return CGRectMake(position_X, position_Y, minSize, minSize);
 }

@@ -49,6 +49,7 @@
 		A4FC234B1A6E4FC000573337 /* rightImage01.png in Resources */ = {isa = PBXBuildFile; fileRef = A4FC23441A6E4FC000573337 /* rightImage01.png */; };
 		A4FC234C1A6E4FC000573337 /* rightImage02.png in Resources */ = {isa = PBXBuildFile; fileRef = A4FC23451A6E4FC000573337 /* rightImage02.png */; };
 		A4FC234D1A6E4FC000573337 /* rightImage03.png in Resources */ = {isa = PBXBuildFile; fileRef = A4FC23461A6E4FC000573337 /* rightImage03.png */; };
+		A4FC234F1A6E761C00573337 /* ic_circle_check_mark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4FC234E1A6E761C00573337 /* ic_circle_check_mark@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +143,7 @@
 		A4FC23441A6E4FC000573337 /* rightImage01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightImage01.png; sourceTree = "<group>"; };
 		A4FC23451A6E4FC000573337 /* rightImage02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightImage02.png; sourceTree = "<group>"; };
 		A4FC23461A6E4FC000573337 /* rightImage03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightImage03.png; sourceTree = "<group>"; };
+		A4FC234E1A6E761C00573337 /* ic_circle_check_mark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_circle_check_mark@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +280,7 @@
 		A4FC22E51A6E3FFA00573337 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				A4FC234E1A6E761C00573337 /* ic_circle_check_mark@2x.png */,
 				A4FC22F21A6E46CC00573337 /* ic_ligh@2x.png */,
 				A4FC22F01A6E41E700573337 /* ic_search@2x.png */,
 				A4FC22EC1A6E409F00573337 /* ic_clock@2x.png */,
@@ -505,6 +508,7 @@
 				A4FC234A1A6E4FC000573337 /* leftImage03.png in Resources */,
 				A4FC22C01A6E38A500573337 /* Main_iPhone.storyboard in Resources */,
 				A4FC22F11A6E41E700573337 /* ic_search@2x.png in Resources */,
+				A4FC234F1A6E761C00573337 /* ic_circle_check_mark@2x.png in Resources */,
 				A4FC234D1A6E4FC000573337 /* rightImage03.png in Resources */,
 				A4FC22EE1A6E409F00573337 /* ic_clock@2x.png in Resources */,
 				A4FC22B71A6E38A500573337 /* InfoPlist.strings in Resources */,
@@ -761,6 +765,7 @@
 				A4FC22E01A6E38A500573337 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4FC22E11A6E38A500573337 /* Build configuration list for PBXNativeTarget "LynxeyeTests" */ = {
 			isa = XCConfigurationList;
@@ -769,6 +774,7 @@
 				A4FC22E31A6E38A500573337 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
