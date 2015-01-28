@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181A07411A7865AE00E93024 /* 112433-glowing-green-neon-icon-symbols-shapes-shapes-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 181A073E1A7865AE00E93024 /* 112433-glowing-green-neon-icon-symbols-shapes-shapes-circle.png */; };
+		181A07421A7865AE00E93024 /* circle_template_for_icons_by_habanacoregamer-d6761uk.png in Resources */ = {isa = PBXBuildFile; fileRef = 181A073F1A7865AE00E93024 /* circle_template_for_icons_by_habanacoregamer-d6761uk.png */; };
+		181A07431A7865AE00E93024 /* circle_icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 181A07401A7865AE00E93024 /* circle_icon.jpg */; };
+		188F61C31A769E8F00EE0FD3 /* LERequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 188F61C21A769E8F00EE0FD3 /* LERequestManager.m */; };
+		18FD8B951A77E0010071FBB7 /* leftImage04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18FD8B931A77E0010071FBB7 /* leftImage04.jpg */; };
+		18FD8B961A77E0010071FBB7 /* rightImage04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18FD8B941A77E0010071FBB7 /* rightImage04.jpg */; };
 		A4FC22AD1A6E38A500573337 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4FC22AC1A6E38A500573337 /* Foundation.framework */; };
 		A4FC22AF1A6E38A500573337 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4FC22AE1A6E38A500573337 /* CoreGraphics.framework */; };
 		A4FC22B11A6E38A500573337 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4FC22B01A6E38A500573337 /* UIKit.framework */; };
@@ -63,6 +69,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		181A073E1A7865AE00E93024 /* 112433-glowing-green-neon-icon-symbols-shapes-shapes-circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "112433-glowing-green-neon-icon-symbols-shapes-shapes-circle.png"; sourceTree = "<group>"; };
+		181A073F1A7865AE00E93024 /* circle_template_for_icons_by_habanacoregamer-d6761uk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle_template_for_icons_by_habanacoregamer-d6761uk.png"; sourceTree = "<group>"; };
+		181A07401A7865AE00E93024 /* circle_icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = circle_icon.jpg; sourceTree = "<group>"; };
+		188F61C11A769E8F00EE0FD3 /* LERequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LERequestManager.h; path = API/LERequestManager.h; sourceTree = "<group>"; };
+		188F61C21A769E8F00EE0FD3 /* LERequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LERequestManager.m; path = API/LERequestManager.m; sourceTree = "<group>"; };
+		18FD8B931A77E0010071FBB7 /* leftImage04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = leftImage04.jpg; sourceTree = "<group>"; };
+		18FD8B941A77E0010071FBB7 /* rightImage04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rightImage04.jpg; sourceTree = "<group>"; };
 		A4FC22A91A6E38A500573337 /* Lynxeye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lynxeye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4FC22AC1A6E38A500573337 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A4FC22AE1A6E38A500573337 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -180,6 +193,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		188F61C01A769E6A00EE0FD3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				188F61C11A769E8F00EE0FD3 /* LERequestManager.h */,
+				188F61C21A769E8F00EE0FD3 /* LERequestManager.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
 		A4FC22A01A6E38A500573337 = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +244,7 @@
 		A4FC22B21A6E38A500573337 /* Lynxeye */ = {
 			isa = PBXGroup;
 			children = (
+				188F61C01A769E6A00EE0FD3 /* API */,
 				A4FC23081A6E4F1900573337 /* Libraries */,
 				A4FC22F41A6E4E4D00573337 /* CustomViews */,
 				A4FC22FB1A6E4E4D00573337 /* Models */,
@@ -280,6 +303,9 @@
 		A4FC22E51A6E3FFA00573337 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				181A073E1A7865AE00E93024 /* 112433-glowing-green-neon-icon-symbols-shapes-shapes-circle.png */,
+				181A073F1A7865AE00E93024 /* circle_template_for_icons_by_habanacoregamer-d6761uk.png */,
+				181A07401A7865AE00E93024 /* circle_icon.jpg */,
 				A4FC234E1A6E761C00573337 /* ic_circle_check_mark@2x.png */,
 				A4FC22F21A6E46CC00573337 /* ic_ligh@2x.png */,
 				A4FC22F01A6E41E700573337 /* ic_search@2x.png */,
@@ -409,6 +435,8 @@
 		A4FC23401A6E4FC000573337 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				18FD8B931A77E0010071FBB7 /* leftImage04.jpg */,
+				18FD8B941A77E0010071FBB7 /* rightImage04.jpg */,
 				A4FC23411A6E4FC000573337 /* leftImage01.png */,
 				A4FC23421A6E4FC000573337 /* leftImage02.png */,
 				A4FC23431A6E4FC000573337 /* leftImage03.png */,
@@ -467,6 +495,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = com.htam86;
 				TargetAttributes = {
+					A4FC22A81A6E38A500573337 = {
+						DevelopmentTeam = CXRTNZ8FZR;
+					};
 					A4FC22CC1A6E38A500573337 = {
 						TestTargetID = A4FC22A81A6E38A500573337;
 					};
@@ -504,10 +535,15 @@
 				A4FC23491A6E4FC000573337 /* leftImage02.png in Resources */,
 				A4FC22F31A6E46CC00573337 /* ic_ligh@2x.png in Resources */,
 				A4FC23471A6E4FC000573337 /* GameData.plist in Resources */,
+				18FD8B961A77E0010071FBB7 /* rightImage04.jpg in Resources */,
+				181A07431A7865AE00E93024 /* circle_icon.jpg in Resources */,
+				181A07411A7865AE00E93024 /* 112433-glowing-green-neon-icon-symbols-shapes-shapes-circle.png in Resources */,
+				18FD8B951A77E0010071FBB7 /* leftImage04.jpg in Resources */,
 				A4FC22C81A6E38A500573337 /* Images.xcassets in Resources */,
 				A4FC234A1A6E4FC000573337 /* leftImage03.png in Resources */,
 				A4FC22C01A6E38A500573337 /* Main_iPhone.storyboard in Resources */,
 				A4FC22F11A6E41E700573337 /* ic_search@2x.png in Resources */,
+				181A07421A7865AE00E93024 /* circle_template_for_icons_by_habanacoregamer-d6761uk.png in Resources */,
 				A4FC234F1A6E761C00573337 /* ic_circle_check_mark@2x.png in Resources */,
 				A4FC234D1A6E4FC000573337 /* rightImage03.png in Resources */,
 				A4FC22EE1A6E409F00573337 /* ic_clock@2x.png in Resources */,
@@ -538,6 +574,7 @@
 				A4FC23021A6E4E4D00573337 /* CheckMarkItemView.m in Sources */,
 				A4FC23071A6E4E4D00573337 /* MarkPosition.m in Sources */,
 				A4FC22BD1A6E38A500573337 /* LEAppDelegate.m in Sources */,
+				188F61C31A769E8F00EE0FD3 /* LERequestManager.m in Sources */,
 				A4FC22C61A6E38A500573337 /* LEViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -612,7 +649,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: do tam (CXRTNZ8FZR)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: do tam (CXRTNZ8FZR)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -628,9 +666,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
+				PROVISIONING_PROFILE = "c8bcfff4-ade9-4497-917f-3eebaaefafe6";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -652,7 +691,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: do tam (CXRTNZ8FZR)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: do tam (CXRTNZ8FZR)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -662,8 +702,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "-ObjC";
+				PROVISIONING_PROFILE = "c8bcfff4-ade9-4497-917f-3eebaaefafe6";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -675,7 +716,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: do tam (CXRTNZ8FZR)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Lynxeye/Lynxeye-Prefix.pch";
 				INFOPLIST_FILE = "Lynxeye/Lynxeye-Info.plist";
@@ -686,7 +728,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a9ebcc3f-c3e2-458c-9d6f-6afedc554d25";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -696,7 +738,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: do tam (CXRTNZ8FZR)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Lynxeye/Lynxeye-Prefix.pch";
 				INFOPLIST_FILE = "Lynxeye/Lynxeye-Info.plist";
@@ -707,7 +750,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a9ebcc3f-c3e2-458c-9d6f-6afedc554d25";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

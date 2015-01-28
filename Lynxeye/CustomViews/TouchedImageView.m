@@ -56,6 +56,13 @@
     }
 }
 
+-(void)suggestMart
+{
+    MarkPosition *suggestedPosition = [_data suggestMark];
+    if (suggestedPosition) {
+        <#statements#>
+    }
+}
 
 /*
 // Only override drawRect: if you perform custom drawing.

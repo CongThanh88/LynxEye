@@ -23,6 +23,15 @@
     return nil;
 }
 
+-(id)init
+{
+    self = [super init];
+    if (self) {
+        self.suggestedNumber = 0;
+    }
+    return self;
+}
+
 -(void)updateMarkDataWithViewSize:(CGSize)realSize
 {
     //Update position

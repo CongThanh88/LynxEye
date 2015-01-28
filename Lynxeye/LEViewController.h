@@ -17,9 +17,10 @@
 
 @property (weak, nonatomic) IBOutlet TouchedImageView *imvTopPicture;
 @property (weak, nonatomic) IBOutlet TouchedImageView *imvBottomPicture;
-@property (weak, nonatomic) IBOutlet UIView *viewSuggest;
+@property (weak, nonatomic) IBOutlet UIButton *btnSuggest;
 @property (weak, nonatomic) IBOutlet UILabel *lblSuggestNumber;
 @property (weak, nonatomic) IBOutlet UILabel *lblCorrectNumber;
 
 @property (weak, nonatomic) IBOutlet UIView *bottomBannerContainer;
+- (IBAction)btnSuggest:(id)sender;
 @end

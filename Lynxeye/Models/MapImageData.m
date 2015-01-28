@@ -61,4 +61,17 @@
         }
     }
 }
+
+
+-(MarkPosition*)suggestMark
+{
+    if (_listMarkPostions && _listMarkPostions.count>0) {
+        for (MarkPosition *position in _listMarkPostions) {
+            if (position && !position.isChecked) {
+                return position;
+            }
+        }
+    }
+    return nil;
+}
 @end

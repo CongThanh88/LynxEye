@@ -20,14 +20,16 @@
     GADBannerView *gadBannerView;
     NSInteger numberOfCorrect;
     NSInteger totalCorrectNumber;
+    NSTimer *timer;
+    int leftSeconds;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    _viewSuggest.layer.cornerRadius = 4;
-    _viewSuggest.layer.masksToBounds = YES;
+    _btnSuggest.layer.cornerRadius = 4;
+    _btnSuggest.layer.masksToBounds = YES;
     
     CGSize screenSize = [UIScreen  mainScreen].bounds.size;
     CGRect bannerFrame = CGRectMake(0, 0, screenSize.width, 50);
@@ -87,6 +89,15 @@
     if (gameLevels) {
         GameLevel *gameLevel = [gameLevels objectAtIndex:level];
         if (gameLevel) {
+            if (gameLevel.gameData && gameLevel.gameData.listMarkPostions) {
+                totalCorrectNumber = gameLevel.gameData.listMarkPostions.count;
+            }
+            leftSeconds = 30*totalCorrectNumber;
+            if (timer) {
+                [timer invalidate];
+                timer = nil;
+            }
+            timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(updateTimer) userInfo:nil repeats:YES];
             _lblCurrentLevel.text = [NSString stringWithFormat:@"LEVEL %d",(level+1)];
             _imvTopPicture.image = [UIImage imageNamed:gameLevel.leftImage];
             _imvBottomPicture.image = [UIImage imageNamed:gameLevel.rightImage];
@@ -94,12 +105,21 @@
             _imvTopPicture.data = gameLevel.gameData;
             _imvBottomPicture.data = gameLevel.gameData;
             
-            totalCorrectNumber = 0;
-            if (gameLevel.gameData && gameLevel.gameData.listMarkPostions) {
-                totalCorrectNumber = gameLevel.gameData.listMarkPostions.count;
-            }
             [self updateCorrectNumberBaseTotalNumber];
         }
+    }
+}
+
+-(void)updateTimer
+{
+    if(leftSeconds > 0 ){
+        leftSeconds -- ;
+        int minutes = (leftSeconds % 3600) / 60;
+        int seconds = (leftSeconds %3600) % 60;
+        _lblTimer.text = [NSString stringWithFormat:@"%02d:%02d", minutes, seconds];
+    }else{
+        [timer invalidate];
+        timer = nil;
     }
 }
 
@@ -120,12 +140,13 @@
     [self updateCorrectNumberBaseTotalNumber];
     
     if (numberOfCorrect == totalCorrectNumber) {
-        [self loadGame:currentLevel++];
+        [self refreshGame];
     }
 }
 
 -(void)refreshGame
 {
+    numberOfCorrect = 0;
     if (gameLevels) {
         currentLevel = (currentLevel+1)%gameLevels.count;
     }
@@ -144,4 +165,6 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)btnSuggest:(id)sender {
+}
 @end

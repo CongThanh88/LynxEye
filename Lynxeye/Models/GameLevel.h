@@ -13,6 +13,8 @@
 @property(nonatomic,strong)NSString *leftImage;
 @property(nonatomic,strong)NSString *rightImage;
 @property(nonatomic,strong)MapImageData *gameData;
+@property(nonatomic,assign)NSInteger suggestNumber;
+@property(nonatomic,assign)NSInteger suggestedNumber;
 
 -(void)updateMarkDataWithViewSize:(CGSize)realSize;
 +(GameLevel*)parseData:(NSDictionary*)dict;
